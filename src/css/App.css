@@ -1,0 +1,190 @@
+body {
+  max-width: 414px;
+  width: 100%;
+  height: 100%;;
+  margin: auto;
+}
+.App {
+  text-align: center;
+}
+
+input{
+  margin-top: 10px;
+  height: 33px;
+  width: 200px; 
+  border: 0;  
+  border-right-color: rgb(148, 8, 8);
+  border-bottom: 2px solid rgb(210, 25, 25);
+  border-bottom-left-radius: 0px;
+}
+input:focus{
+  border: 0px;
+  border-top-left-radius: 0px;
+  border-bottom: 2px solid rgb(8, 130, 230);
+  background: rgb(228, 225, 225);
+  
+}
+.CityName{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2px;
+  font-size: 1em;
+  color: #fff;
+}
+.CityName h1{
+  font-size: 1em;
+}
+ button{
+  height: 36px;
+  width: 70px;
+  background: rgb(148, 8, 8);
+  color: #fff;
+  border: 2px solid rgb(148, 8, 8);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+button:hover{
+  background: rgb(148, 58, 58);
+  box-shadow: 0px 0px 5px #444;
+
+}
+button:active{
+  background: rgb(148, 8, 8);
+  box-shadow: 0px 0px 1px #444;
+
+}
+.weather-icon {
+  width: 75px;
+  height: 75px;
+}
+.App-header {
+  background-color:rgb(148, 8, 8);
+  min-height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-size: calc(10px + 1vmin);
+  color: white;
+}
+.minMax-info{
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.App-link {
+  color: #61dafb;
+}
+.MainBody{
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#cf5d11, #cf8f16, #ce9847);  
+  margin: 1em;
+  border-radius: 10px;
+  border:#444;
+  box-shadow: 0px 0px 5px rgb(100, 100, 100);
+}
+.hot {
+  background: linear-gradient(#f74509, #e2672e, #ce9847);  
+
+}
+.warm {
+  background: linear-gradient(#ff821c, #c48e49);  
+}
+.freezing{
+  background: linear-gradient(#1a074e, #083baa);  
+  color: #fff;
+}
+.cold {
+  background: linear-gradient(#0d45eb, #95afe7);  
+}
+.sunny {
+  background: linear-gradient(#ece938, #e9de41, #a19705);  
+}
+.Temp-info h2{
+  margin-top: 0px;
+  font-size: 5em;
+}
+ ul {
+  list-style: none;
+}
+.mainTemp h3{
+  margin-top: -80px;;
+}
+.mainTemp h3:first-letter {
+  text-transform:capitalize;
+}
+.mainTemp{
+  color: #444;
+}
+
+/* switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 4px;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(243, 159, 33);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(243, 159, 33);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
