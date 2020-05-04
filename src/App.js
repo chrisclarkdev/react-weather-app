@@ -81,12 +81,11 @@ class App extends Component {
       else if (this.state.main >= 24 ){
         const element = document.getElementById("myDIV");
         element.classList.remove("warm");
-      element.classList.remove("sunny");
-      element.classList.remove("freezing");
-      element.classList.remove("cold");
-      element.classList.remove("default");
-
-      element.classList.add("hot");  // it's sweating time 
+        element.classList.remove("sunny");
+        element.classList.remove("freezing");
+        element.classList.remove("cold");
+        element.classList.remove("default");
+        element.classList.add("hot");  // it's sweating time 
       }
         return (
           <div className="App">
