@@ -27,7 +27,7 @@ class App extends Component {
                     minMaxTemp : data.main
                   })
   }
-  
+//  Hello World! 
     render() {
       
      if (this.state.main < 1 ){
