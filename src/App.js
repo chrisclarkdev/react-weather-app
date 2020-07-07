@@ -6,7 +6,7 @@ import MainTemp from './components/MainTemp';
 import MinMax from './components/MinMax';
 import CityInfo from './components/CityInfo';
 const API_KEY = "&APPID=5191901e9fce1e3cae9465a2a402c6f0";
-// Hello World !!!
+
 class App extends Component {
    state = {
       weatherData: [],
@@ -27,7 +27,7 @@ class App extends Component {
                     minMaxTemp : data.main
                   })
   }
-//  Hello World! 
+
     render() {
       
      if (this.state.main < 1 ){
